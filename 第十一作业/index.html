@@ -1,0 +1,83 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<h1>我的主页</h1>	
+  <section class="clearfix">
+
+  	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+		<style>
+		a:link{
+			color: black;
+		}
+		a:visited{
+			color: blue;
+		}
+		a:hover{
+			color: green;
+		}	
+		a:active{
+			color: red;
+		}
+
+	<style>
+
+	
+	body{
+		width: 1200px;	
+		padding: 0;
+	    margin: 5px auto
+
+
+;
+	}
+	.clearfix::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+ 	header{
+ 		border: 1px solid #ff0;
+ 		height: 200px
+ 		
+;
+ 	}
+ 	aside{
+ 		border: 1px solid #0ff;
+ 		height: 300px;
+ 		width: 150px;
+ 		float: left;
+ 		margin: 2px 0px;
+ 	}
+ 	main{
+ 		border: 1px solid #0f0;
+ 		height: 300px;
+ 		width: 1000px;
+ 		float: right;
+ 		margin: 2px 0px 2px 4px ;
+ 	}
+ 	footer{
+ 		border: 1px solid #555545;
+ 		height: 100px;
+ 		width: auto;
+ 	}
+	</style>
+	<div id="center" >
+	
+<h2><a href="">导航</a></h2>
+<h2><a href="">导航</a></h2>
+
+</head>
+
+<body>
+	<header>header</header>
+	<section  class="clearfix">
+		<aside>aside</aside>
+		<main>main</main>
+	</section>
+	<footer>footer</footer>
+</body>
+</html>
