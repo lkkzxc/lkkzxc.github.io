@@ -1,0 +1,53 @@
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.imagelist{
+	max-width: 1200px;
+	margin: auto;
+}
+.imagelist figure{
+	float: left;
+	width: 30%;
+	overflow: hidden;
+	margin: 10px calc(10%/6);
+	position: relative;
+	cursor: pointer;
+}
+.imagelist figure img{
+	width: 100%;
+	vertical-align: top;
+}
+.imagelist figure figcaption{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	border: 1px solid #fff;
+	box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.8),inset 0px 0px 10px 10px rgba(0,0,0,0.3);
+	text-align: center;
+	transition: all 0.5s linear;
+}
+.imagelist figure:hover figcaption{
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.3),inset 0px 0px 10px 10px rgba(0,0,0,0.8);
+	
+}
+.imagelist figure figcaption h3{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	opacity: 0;
+	transition: all 0.8s;
+}
+.imagelist figure:hover figcaption h3{
+	opacity: 1;
+	color: #FFFFFF;
+}
