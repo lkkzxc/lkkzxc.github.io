@@ -1,0 +1,290 @@
+
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+ul{
+	list-style: none;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+input{
+	border: none;
+	outline: none;
+}
+.container{
+	max-width: 1200px;
+	margin: auto;
+	padding: 1px;
+}
+body{
+	min-height: 1400px;
+	font-family: "寰蒋闆呴粦",simhei;
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(../font/google/DK0eTGXiZjN6yA8zAEyM2fRMc6C39aem-aUPzsV2c2w.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(../font/google/DK0eTGXiZjN6yA8zAEyM2e87R-l0-Xx_7cYc0ZX1ifE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(../font/google/DK0eTGXiZjN6yA8zAEyM2Ud0sm1ffa_JvZxsF_BEwQk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Shadows Into Light';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Shadows Into Light'), local('ShadowsIntoLight'), url(http://fonts-gstatic.googlefonts.net/s/shadowsintolight/v6/clhLqOv7MXn459PTh0gXYFK2TSYBz0eNcHnp4YqE4Ts.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+header{
+	position: fixed;
+	width: 100%;
+	padding: 20px 0px;
+	background-color: rgba(0,0,0,0);
+	transition:padding .5s,background-color .5s;
+}
+header.on{
+	padding: 5px 0px;
+	background-color: rgba(0,0,0,0.6);
+}
+header a{
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+header a:hover{
+	color: #339BEB;
+}
+header .logo{
+	float: left;	
+}
+
+header .logo img,
+header .logo span{
+	vertical-align: middle;
+width: 50px;
+height: 50px;
+}
+header .logo span{
+	font-size:3.5em;
+	font-family: 'Dancing Script', cursive;
+}
+header .topMenu{
+	float: right;
+	margin-top: 5px;
+}
+header .topMenu ul li{
+	float: left;
+	margin: 0px 30px;
+}
+
+.banner{
+	min-height: 600px;
+	background: url(../img/411_1.jpg) no-repeat center top;
+	background-size: cover;
+}
+.banner .container{
+	width: 800px;
+	height: 180px;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+.banner .container h1{
+	text-align: center;
+}
+.banner .container h1 strong{
+	color: #339BEB;
+}.banner .container p strong{
+	background-color:rgba(255,255,255,.5);
+	color:#000;
+	padding: 3px;
+	font-weight: normal;
+}
+.service{
+
+}
+.service li{
+  
+}
+.service li::after{
+   
+}
+.service li:nth-child(2n){
+    
+}
+.service li i{
+   }
+.service li:nth-child(2n) i{
+    
+}
+.service li h3{
+   
+}
+.service{
+    min-height: 600px;
+    background: url(../img/desktop.jpg) center center no-repeat;
+    background-size: cover;
+    color#000;
+    text-shadow: 1px 1px 0px rgba(0,0,0,.5);
+}
+.service li{
+    float: left;
+    width: 48%;
+    margin-right: 3%;
+    text-align: right;
+}
+.service li::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.service li:nth-child(2n){
+    margin-right: 0px;
+    text-align: left;
+}
+.service li i{
+    float: right;
+    padding: 12px 0px 12px 20px;
+}
+.service li:nth-child(2n) i{
+    float: left;
+    padding: 12px 20px 12px 0px;
+}
+.service li h3{
+    display: inline-block;
+    margin: 0px;
+}
+.case{
+	margin-bottom: 100px;
+}
+.case .container p a{
+	color: #339BEB;
+}
+.case figure{
+	float: left;
+	overflow: hidden;
+	width:30%;
+	margin: 30px calc(10% / 2) 10px 3px;
+	position: relative;
+	cursor: pointer;
+}
+.case figure:nth-child(4n){
+	margin-right: 0;
+}
+.case figure img{
+	width: 100%;
+	height: auto;
+	transform: scale(1) rotate(0deg);
+	transition transform .5s;
+	vertical-align: top;
+}
+.case figure:hover img{
+	transform: scale(1.2) rotate(3deg);
+}
+.case figcaption{
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	right: 5%;
+	bottom: 5%;
+	padding: 10px;
+	
+	background-color: rgba(255,255,255,.8);
+}
+.case figcaption .time{
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	text-align: center;
+	background-color: #000000;
+	
+}
+.case figure figcaption .time .month{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.case figure figcaption h3{
+	margin: 5px 0px 0px 70px;
+}
+.case figure figcaption p{
+	line-height: 1.5;
+	font-size: 1em;
+}
+.case figure figcaption .data{
+	position: absolute;
+	height: 20px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.2);
+	text-align: right;
+	font-size: 0.8em;
+}
+.case figure figcaption .data *{
+	padding: 0px 2px;
+}
+.contact{
+	background: url(../img/android-1869510_1920.jpg) no-repeat center top ;
+	background-size: cover;
+	color: #339BEB;
+	height: 1200px;
+}
+.contact .left{
+	width: 50%;
+	float: rightt;
+	margin-right: 10%;
+	line-height: 2;
+}
+.contact .left p{
+	margin-top: 0;
+}
+.contact .left i{
+	padding: 0px 10px 0px 0px;
+}
+.contact .right{
+	float: right;
+	width: 48%;
+	margin-right: 0%;
+}
+.contact .right input,
+.contact .right textarea{
+	width: 100%;
+	padding: 10px 16px;
+	margin: 10px 0;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	background: rgba(255,255,255,0.6);
+}
+/*
+ footer
+ * */
+footer{
+	text-align: center;
+}
